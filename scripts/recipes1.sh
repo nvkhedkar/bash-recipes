@@ -46,3 +46,4 @@ sed_stuff()
     perl -ne 'print "$1\n" if /(--spring\.profiles\.active\=.*)'\''/' $gradle_file
     echo "done."
 }
+
