@@ -15,7 +15,7 @@ DBPORT=5432
 # pg_restore -v --no-owner --host=0.0.0.0 --port=5432 --username=airflow --dbname=airflow manageddatabase.dump
 
 LOG_FILE=$AIRFLOW_DB_BKP_DIR/restore_db.log
-#. /trusolid/pytrusol/scripts/common.sh --source_only
+#. /myprojid/pymyproj/scripts/common.sh --source_only
 
 log()
 {
@@ -97,7 +97,7 @@ backup_pgdb()
   if [ -d "$AIRFLOW_DB_BKP_DIR" ]; then
     echo "found logs dir"
   else
-    cd /trusol
+    cd /myproj
     run_cmd "sudo mkdir -p $AIRFLOW_DB_BKP_DIR"
     run_cmd "sudo chown -R ccsteam:ccsteam $AIRFLOW_DB_BKP_DIR"
   fi

@@ -104,8 +104,8 @@ sudo rabbitmqctl add_user admin administrator
 sudo rabbitmqctl set_user_tags admin administrator
 sudo rabbitmqctl add_user genuser genuser
 sudo rabbitmqctl set_user_tags genuser administrator
-sudo rabbitmqctl add_vhost trusol2
-sudo rabbitmqctl set_permissions -p trusol2 genuser ".*" ".*" ".*"
+sudo rabbitmqctl add_vhost myproj2
+sudo rabbitmqctl set_permissions -p myproj2 genuser ".*" ".*" ".*"
 sudo systemctl restart rabbitmq-server
 
 

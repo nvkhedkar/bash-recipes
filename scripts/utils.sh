@@ -68,7 +68,7 @@ create_user(){
       usrpass="$3"
     fi
     run_cmd "sudo groupadd $usr"
-    # -G rabbitmq,kibana # -c 'ptc $usr user'
+    # -G rabbitmq,kibana # -c 'myproj $usr user'
     log "running sudo useradd"
     CMDRES=$(sudo useradd $usr -m -s /bin/bash -g $usr -c "New user")
     log "$CMDRES"
